@@ -1,0 +1,17 @@
+Document data structures for embeddings are designed to represent entire texts as dense numerical vectors, enabling similarity search, classification, and retrieval in AI systems. Modern approaches combine chunking, transformer-based long-context models, and structure-aware encoders to handle large, complex documents efficiently.
+
+Core Concepts of Document Embeddings
+Embedding Definition: A fixed-length numerical vector (often 256–3072 dimensions) that encodes semantic meaning of text, images, or structured data.
+
+Similarity Search: The primary operation is finding nearest neighbors in vector space using metrics like cosine similarity, Euclidean distance, or dot product.
+
+Dense Representation: Unlike sparse models (e.g., TF-IDF), embeddings capture semantic proximity, making them ideal for tasks like semantic search and retrieval-augmented generation (RAG).
+
+Applications
+Semantic Search: Finding documents similar in meaning, not just keywords.
+
+Retrieval-Augmented Generation (RAG): Supplying LLMs with relevant context.
+
+Classification & Clustering: Grouping documents by topic or sentiment.
+
+Knowledge Graph Integration: Linking embeddings with structured relational data.

@@ -1,0 +1,14 @@
+RAG (Retrieval Augmented Generation) is a workflow pattern in AI where a language model is combined with a retrieval system to produce more accurate, up to date, and grounded answers. Instead of relying only on its training data (which has a cutoff), the model retrieves relevant information from external sources (like databases, APIs, or documents) and uses that context to generate responses.
+
+How RAG Works
+Data Ingestion = Collect documents, APIs, or knowledge bases.
+
+Embedding & Indexing = Convert text into vector representations using embedding models (e.g., OpenAI embeddings, SentenceTransformers).
+
+Vector Database = Store embeddings in Pinecone, Weaviate, or FAISS for fast similarity search.
+
+Retrieval = At query time, fetch the most relevant chunks of data.
+
+Generation = Pass retrieved context + user query into the LLM (like GPT 4.1, Claude, or LLaMA).
+
+Post Processing = Format, filter, or validate the output.
